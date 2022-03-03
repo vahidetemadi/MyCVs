@@ -1,0 +1,177 @@
+% !TeX program = xelatex
+% Run with XeLaTeX
+% just changed a bit
+\documentclass[
+    changecolor={111, 156, 45}
+%    titlecolor=second,
+%    colorharmony={wheel,1,3}, 
+]{cv-roald}
+% Available options for cv-roald documentclass: 
+% 
+% - changecolor = {R, G, B} (default: {169, 53, 40} = sharelatex lion red)
+%   Changes the color of the header bar and the titles. 
+%   It expects a RGB color code where RGB go from 0-255.
+%
+% - colorharmony = {wheel,i,j} (defualt: {wheel,1,3})
+%   Choose the color harmony model you want to use.
+%     wheel = wheel or twheel
+%     i		= number < j
+%	  j		= for j-color harmony 
+%	    	  j=3 -> three color harmony or color triad
+% 	See page 37 of the xcolor manual for more information on commands: 
+% 	http://texdoc.net/texmf-dist/doc/latex/xcolor/xcolor.pdf  
+% 	Or check http://paletton.com to see how color harmonies work.
+%
+% - titlecolor = {colorname} (default: main)
+%	Change the colors of the titles. You can try: second, black!50, 
+%	green!40!yellow, etc.     	
+%
+%  The colors defined through changecolor and colorharmony are called 
+%  *main* and *second* and can be used in the main document.	
+\begin{document}
+\pagestyle{empty} %to remove the page numbers
+
+% This is the header on the first page. It contains your name and contact
+% details. 
+% \sep inserts a | between items. 
+% You can use FontAwesome icons and use \FAspace after a font awesome icon to
+% insert a predefined horizontal space after a font awesome icon icon.
+%Modaress BLVD
+\header{Vahid}{Etemadi}{ \color{white}
+  \faExternalLink \FAspace \href{https://vahidetemadi.github.io}{\textcolor{white}{vahidetemadi.github.io}} \sep \color{white}
+  \faMapMarker \FAspace \textcolor{white}{Shiraz University of Technology} \sep \faMobile \FAspace \textcolor{white}{+98 9365433074}}{%
+  \faEnvelope \FAspace vetemadi87@gmail.com \sep \color{white} 
+  \faLinkedinSquare \FAspace \href{https://www.linkedin.com/in/vahidetemadi}{\textcolor{white}{/in/vahidetemadi}}\sep%
+  \faGithub \FAspace \href{https://github.com/vahidetemadi}{\textcolor{white}{/vahidetemadi}}%
+  }
+
+
+% Add a picture to the top right of the page. Comment or delete if you do not 
+% want a picture
+
+\photo{Vahid}
+
+%\textit{Make at least one definite move daily towards your goal. (Bruce Lee)}
+
+\section*{Professional Experiences}
+\begin{tabularcv}
+Sep 2014 - Aug 2021 &	\worktitle{Graduate Researcher at Distributed Systems Lab, \href{https://sutech.ac.ir/en} {Shiraz University of Technology}, Shiraz, Iran}
+\newline
+	\begin{itemize}
+		\item Making software maintenance more automated through focusing on bug locating and task assignment.
+		\item Providing a scheduling-driven approach with the objective of \emph{Time} and \emph{Cost} reduction in task assignment of software projects. We created a task dependency graph of input bugs and recommend the fixers based on a SBSE approach
+		\item Defining \emph{Knowledge Diffusion} as the objective during a search-based task assignment for making development team more robust to developer churn.
+		\newline (*) During my PhD, my main PL for implementation were Java (usually used Python as a complement too)
+		\newline (**) Find our research output  \href{https://scholar.google.com/citations?user=xsq8pzUAAAAJ&hl=en&oi=ao}{here}
+	\end{itemize}
+\\
+Aug 2019- Dec 2019 &	\worktitle{Software Engineering Internship, \href{http://www.fstp.ir/} {Pajouhan Matin}, Shiraz, Iran}
+\newline Contributing to ``mxGraph" open source project to adopt it for BPMS application modeling
+\begin{itemize}
+	% Example use of *maincolor* and *secondcolor* in the main document.    
+	\item Developing a relational database of a sample organization
+	\item Working with Java libraries like swing to make a customized UI for BPMS modeling 
+	\item Trying to map BPMS components to relational database entities
+\end{itemize} 
+\\
+Apr 2018- Dec 2018 &	\worktitle{Visiting Researcher at \href{https://urjc.es} {Universidad Rey Juan Carlos}, Madrid, Spain} 
+\newline Visiting LibreSoft lab at the Department of Telecommunication Engineering under the supervision of Prof. Gregorio Robles and Prof. Jesus M. Gonzalez Barahona
+\\
+Sep 2015- Oct 2017 &	\worktitle{Software Developer (Part-time), \href{https://asretelecom.net}{AsreTelecom}, Shiraz, Iran}
+                \newline Developing Web Applications for Internet Service Provider Company
+                \begin{itemize}
+                % Example use of *maincolor* and *secondcolor* in the main document.    
+                  \item Developing and maintaining SQL server database, working with different kind of queries, taking care of queries performance
+                  \item Implementing the main processes behind an Internet Service Provider company, following an A to Z designing process to deliver maintainable software product 
+                  \item Designing and implementing reporting dashboards, usually upon the requests from mid and senior managers.
+                \end{itemize} 
+              	\\
+\\
+Sep 2012- Sep 2014 &	\worktitle{Graduate Researcher at \href{https://www.kntu.ac.ir/Index.aspx?lang=2\&sub=73} {IE-Data Mining Group} K. N. Toosi University of Technology, Tehran, Iran} \newline
+\begin{itemize}
+	\item Analyzing a sample network retrieved from \emph{Facebook.com} to propose a hybrid friend recommendation system
+	\item We relied on a combination of structural and social features to strengthen the friend network in social media platforms 
+	\item Then, it is going to be more probable to have potential friends reaching out to one another while social media tighten up its whole network
+\end{itemize}  
+
+\end{tabularcv}   
+
+\section*{Skills}
+
+Programming Languages: Java, Experience with C\#, Python, Beginner in Scala , PHP
+
+Databases: MS SQL Server, MySQL, PostgreSQL (Relational), Familiar with Elasticsearch, MongoDB (NoSQL) 
+
+Operating Systems: Linux, Windows
+
+Software Design (\& Tools): Object-Oriented Design, Rational Unified Process, Data Modeling, UML, Visual Paradigm
+% UML Rational Rose
+
+Web: Experience with HTML5, CSS, JavaScript
+
+Web-Service: Experience with REST,  Knowledge of Microservices, SOA
+
+Architecture (patterns, views): N-Tier, MVC, REST, Client-Server, Service-Oriented
+
+Software Development Frameworks: Spring boot, .NET framework, Familiar with Vue.js and Django
+% Beginner in Spring boot
+
+CI/CD: Knowledge of working with Docker, Jenkins, Familiar with GitHub Action
+
+Version Control System: Git
+
+Build Tools: Building with Maven, Familiar with Gradle
+
+Analytical Tools: Weka, Gephi, Experience with PyTorch, Familiar with Keras
+
+Big data: Knowledge of Apache Spark, Familiar with Apache Cassandra and ETL pipeline
+
+Test: Bug localization, JUnit, Mockito, Integration testing of Spring boot 
+
+Semantic Analysis: Knowledge of OWL, RDF, XML
+%and Protégé 
+
+\section*{Education}
+
+% Use tabularcv environment to make a two column environment. The left column 
+% is for the dates, the right one is for details of your education for example. 
+% You can use the command \worktitle{Study name/Job title}{Location}.
+\begin{tabularcv}
+	2014-2021   &   \worktitle{PhD Information Technology}{Shiraz University of Technology (SUTECH)}
+	\newline Thesis title: Software Change Management as A Service: A Self-Adaptive Approach
+%	\begin{itemize}
+%		\item Proposing a new method for Task Assignment problem during software development  
+%		\item Design and implement a Self-Adaptive Task Assignment system to Reduce overall software project cost 
+		%\item Taking into Account The New Metric, Information Diffusion, in Task Assignment
+%	\end{itemize} 
+	\\
+	2012-2014   &   \worktitle{Master Information Technology}{K.N.Toosi University of Technology (KNTU)}
+	\newline Thesis title: Improving Recommendation System in Social Network with Profile Mining 
+	\\
+	2008-2012   &   \worktitle{Bachelor Information Technology}{Shiraz University of Technology (SUTECH)}
+	\newline Thesis title: Service and Content Distribution in Cloud Computing Environments
+\end{tabularcv}
+
+\section*{Sample Courses (Accomplished)}
+
+Advanced Distributed Systems, Semantic Web, Artificial Intelligence, Data Mining, Business Process Re-engineering, Software Development \& Management, Software Testing, Database systems
+
+\section*{Certificates}
+	\begin{tabularcv}
+		Dec 2013 & \worktitle{Social Network Analysis}
+		\newline Grade Achieved: 78.9\%
+		\newline Instructor: Prof. Lada Adamic
+		\newline Delivered by Coursera.org
+	\end{tabularcv}
+
+\section*{Languages}
+\begin{tabularcv}
+Persian     &	Native \\
+English     &  	Vantage \\
+\end{tabularcv}
+
+\section*{Interests}
+Soccer (Watching), Ping-Pong, Hiking, Language exchange, Movies
+    
+\end{document}
+
